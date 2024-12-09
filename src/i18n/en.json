@@ -2,5 +2,10 @@
   "metadata": {
     "title": "Padel Essence",
     "description": "The best of padel"
+  },
+  "navbar": {
+    "rackets": "Rackets",
+    "shoes": "Shoes",
+    "material_and_accessories": "Material and Accessories"
   }
 }
