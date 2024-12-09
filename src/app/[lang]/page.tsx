@@ -9,11 +9,13 @@ export async function generateMetadata(
   const dict = await getDictionary(lang)
 
   return {
-    title: `${dict.metadata.title}`,
-    description: `${dict.metadata.description}`,
+    title: dict.metadata.title,
+    description: dict.metadata.description,
   }
 }
+
 export default async function Home({ params: { lang } }: GeneralProps) {
-  const dict = await getDictionary(lang)
+  const dict = await getDictionary(lang || 'en')
+
   return <main></main>
 }
