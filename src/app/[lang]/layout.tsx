@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import '../globals.css'
 
 import { LangOptions, getDictionary } from './dictionaries'
+import Navbar from '@/components/molecules/navbar/navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +24,7 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang={params.lang}>
       <body className={inter.className}>
         {children}
-        {/* <Navbar dict={dict} /> */}
+        <Navbar dict={dict} />
       </body>
     </html>
   )
