@@ -6,6 +6,7 @@
   "navbar": {
     "rackets": "Palas",
     "shoes": "Zapatos",
-    "material_and_accessories": "Material y accesorios"
+    "material_and_accessories": "Material y accesorios",
+    "search_placeholder": "Empieza tu búsqueda aquí..."
   }
 }

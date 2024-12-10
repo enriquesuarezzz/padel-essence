@@ -6,6 +6,7 @@
   "navbar": {
     "rackets": "Rackets",
     "shoes": "Shoes",
-    "material_and_accessories": "Material and Accessories"
+    "material_and_accessories": "Material and Accessories",
+    "search_placeholder": "Start your search here..."
   }
 }
