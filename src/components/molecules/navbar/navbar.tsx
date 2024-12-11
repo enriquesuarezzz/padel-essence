@@ -55,11 +55,28 @@ export default function Navbar({ dict }: LangProps) {
   }
 
   return (
-    <nav className="fixed top-0 mx-auto flex w-full items-center justify-between gap-3 px-4 py-5 text-white md:gap-5">
-      <div className="flex items-center gap-4">
+    <nav className="fixed top-0 flex w-full items-center justify-between bg-transparent px-6 py-5 text-white">
+      {/* Left Section: Burger Menu */}
+      <div className="flex items-center gap-4 md:hidden">
+        {/* Burger Menu */}
+        <button
+          className="md:hidden"
+          onClick={toggleMenu}
+          aria-label="Toggle Menu"
+        >
+          {isMenuOpen ? <span>✕</span> : <span>☰</span>}
+        </button>
+      </div>
+
+      {/* Center Section: Logo */}
+      <div className="flex-shrink-0">
         <Image src="/images/logo.avif" width={120} height={60} alt="Logo" />
-        {/* Navbar links */}
-        <div className="hidden items-center gap-4 md:flex">
+      </div>
+
+      {/* Right Section: Links, Search, Cart, Language */}
+      <div className="flex items-center gap-6 md:gap-8">
+        {/* Desktop Links */}
+        <div className="hidden items-center gap-6 md:flex">
           {data.map((item) => (
             <Link href={item.href} key={item.title}>
               <OnestText
@@ -71,23 +88,26 @@ export default function Navbar({ dict }: LangProps) {
             </Link>
           ))}
         </div>
-      </div>
 
-      <div className="flex items-center gap-4">
-        {/* Search bar */}
-        <div className="hidden items-center gap-2 rounded-md border border-gray-800 focus-within:ring-2 focus-within:ring-blue-500 md:flex">
+        {/* Search */}
+        <div className="hidden items-center gap-2 rounded-md border border-gray-800 px-3 py-2 focus-within:ring-2 focus-within:ring-blue-500 md:flex">
           <input
             type="text"
             placeholder={dict.navbar.search_placeholder}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="bg-transparent px-3 py-2 text-white focus:outline-none"
+            className="bg-transparent text-white focus:outline-none"
           />
           <Search />
         </div>
 
-        {/* Language selection */}
-        <div className="hidden gap-2 md:flex">
+        {/* Cart */}
+        <button className="rounded-md border border-gray-600 p-2">
+          <Cart />
+        </button>
+
+        {/* Language Toggle */}
+        <div className="hidden items-center gap-2 md:flex">
           <button
             onClick={() => changeLanguage('en')}
             aria-label="English"
@@ -102,32 +122,19 @@ export default function Navbar({ dict }: LangProps) {
           >
             <Spanish className="size-5" />
           </button>
-          <button className="rounded-md border border-gray-600 p-2">
-            <Cart />
-          </button>
         </div>
-
-        {/* Burger Menu */}
-        <button
-          className="md:hidden"
-          onClick={toggleMenu}
-          aria-label="Toggle Menu"
-        >
-          {isMenuOpen ? <span>✕</span> : <span>☰</span>}{' '}
-          {/* Replace with your SVG icons */}
-        </button>
       </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="absolute left-0 right-0 top-full z-50 bg-gray-800 p-4 md:hidden">
+        <div className="absolute left-0 right-0 top-full z-50 bg-transparent p-4 md:hidden">
           {data.map((item) => (
             <Link href={item.href} key={item.title}>
               <OnestText
                 text={item.title}
                 style="bold"
                 fontSize="19px"
-                className="block py-2 text-center text-white hover:bg-gray-700"
+                className="block py-2 text-center text-white"
               />
             </Link>
           ))}
