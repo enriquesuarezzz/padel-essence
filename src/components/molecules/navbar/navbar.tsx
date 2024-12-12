@@ -15,7 +15,7 @@ export default function Navbar({ dict }: LangProps) {
   const router = useRouter()
   const pathname = usePathname()
   const [searchQuery, setSearchQuery] = useState('')
-  const [isMenuOpen, setIsMenuOpen] = useState(false) // State for burger menu
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const data = [
     {
@@ -55,40 +55,58 @@ export default function Navbar({ dict }: LangProps) {
   }
 
   return (
-    <nav className="fixed top-0 flex w-full items-center justify-between bg-transparent px-6 py-5 text-white">
-      {/* Left Section: Burger Menu */}
-      <div className="flex items-center gap-4 md:hidden">
+    <nav className="fixed top-0 flex w-full items-center bg-transparent px-6 py-5 text-white">
+      {/* Mobile: Burger Menu, Logo (centered), and Cart */}
+      <div className="relative flex w-full items-center justify-between md:hidden">
         {/* Burger Menu */}
-        <button
-          className="md:hidden"
-          onClick={toggleMenu}
-          aria-label="Toggle Menu"
-        >
+        <button className="z-10" onClick={toggleMenu} aria-label="Toggle Menu">
           {isMenuOpen ? <span>✕</span> : <span>☰</span>}
+        </button>
+
+        {/* Logo (centered) */}
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
+          <Image
+            src="/images/logo.avif"
+            width={80}
+            height={40}
+            alt="Logo"
+            className="flex-shrink-0"
+          />
+        </div>
+
+        {/* Cart */}
+        <button className="z-10 rounded-md border border-gray-600 p-2">
+          <Cart />
         </button>
       </div>
 
-      {/* Center Section: Logo */}
-      <div className="flex-shrink-0">
-        <Image src="/images/logo.avif" width={120} height={60} alt="Logo" />
+      {/* Desktop: Navigation Links */}
+      <div className="hidden items-center gap-6 md:flex md:flex-1">
+        {data.map((item) => (
+          <Link href={item.href} key={item.title}>
+            <OnestText
+              text={item.title}
+              style="bold"
+              fontSize="16px"
+              className="hover:text-blue-500"
+            />
+          </Link>
+        ))}
       </div>
 
-      {/* Right Section: Links, Search, Cart, Language */}
-      <div className="flex items-center gap-6 md:gap-8">
-        {/* Desktop Links */}
-        <div className="hidden items-center gap-6 md:flex">
-          {data.map((item) => (
-            <Link href={item.href} key={item.title}>
-              <OnestText
-                text={item.title}
-                style="bold"
-                fontSize="19px"
-                className="hover:text-blue-500"
-              />
-            </Link>
-          ))}
-        </div>
+      {/* Logo */}
+      <div className="hidden flex-shrink-0 md:block">
+        <Image
+          src="/images/logo.avif"
+          width={120}
+          height={60}
+          alt="Logo"
+          className="mx-auto"
+        />
+      </div>
 
+      {/* Right Section */}
+      <div className="hidden items-center justify-end gap-6 md:flex md:flex-1">
         {/* Search */}
         <div className="hidden items-center gap-2 rounded-md border border-gray-800 px-3 py-2 focus-within:ring-2 focus-within:ring-blue-500 md:flex">
           <input
@@ -107,7 +125,7 @@ export default function Navbar({ dict }: LangProps) {
         </button>
 
         {/* Language Toggle */}
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="flex items-center gap-2">
           <button
             onClick={() => changeLanguage('en')}
             aria-label="English"
@@ -128,29 +146,48 @@ export default function Navbar({ dict }: LangProps) {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="absolute left-0 right-0 top-full z-50 bg-transparent p-4 md:hidden">
-          {data.map((item) => (
-            <Link href={item.href} key={item.title}>
-              <OnestText
-                text={item.title}
-                style="bold"
-                fontSize="19px"
-                className="block py-2 text-center text-white"
+          <div className="flex flex-col items-center justify-center">
+            {/* Links */}
+            {data.map((item) => (
+              <Link href={item.href} key={item.title}>
+                <OnestText
+                  text={item.title}
+                  style="bold"
+                  fontSize="16px"
+                  className="block py-2 text-center text-white"
+                />
+              </Link>
+            ))}
+
+            {/* Search */}
+            <div className="mt-4 flex w-96 items-center gap-2 rounded-md border border-gray-800 px-3 py-2 focus-within:ring-2 focus-within:ring-blue-500">
+              <input
+                type="text"
+                placeholder={dict.navbar.search_placeholder}
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full bg-transparent text-white focus:outline-none"
               />
-            </Link>
-          ))}
-          <div className="mt-4 flex justify-center gap-4">
-            <button
-              onClick={() => changeLanguage('en')}
-              className={`hover:text-orange ${currentLang === 'es' ? 'opacity-50' : ''}`}
-            >
-              <English className="size-5" />
-            </button>
-            <button
-              onClick={() => changeLanguage('es')}
-              className={`hover:text-orange ${currentLang === 'en' ? 'opacity-50' : ''}`}
-            >
-              <Spanish className="size-5" />
-            </button>
+              <button onClick={handleSearch} aria-label="Search">
+                <Search />
+              </button>
+            </div>
+
+            {/* Language Toggle */}
+            <div className="mt-4 flex justify-center gap-4">
+              <button
+                onClick={() => changeLanguage('en')}
+                className={`hover:text-orange ${currentLang === 'es' ? 'opacity-50' : ''}`}
+              >
+                <English className="size-5" />
+              </button>
+              <button
+                onClick={() => changeLanguage('es')}
+                className={`hover:text-orange ${currentLang === 'en' ? 'opacity-50' : ''}`}
+              >
+                <Spanish className="size-5" />
+              </button>
+            </div>
           </div>
         </div>
       )}
