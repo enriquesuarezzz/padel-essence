@@ -8,5 +8,15 @@
     "shoes": "Shoes",
     "material_and_accessories": "Material and Accessories",
     "search_placeholder": "Start your search here..."
+  },
+  "items": {
+    "item1": {
+      "title": "title item 1",
+      "description": "description item 1"
+    },
+    "item2": {
+      "title": "title item 2",
+      "description": "description item 2"
+    }
   }
 }
