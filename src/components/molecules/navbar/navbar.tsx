@@ -1,5 +1,4 @@
 'use client'
-
 import { OnestText } from '@/components/atoms/onest_text'
 import English from '@/components/atoms/svg/english'
 import Spanish from '@/components/atoms/svg/spanish'
@@ -87,7 +86,7 @@ export default function Navbar({ dict }: LangProps) {
             <OnestText
               text={item.title}
               style="bold"
-              fontSize="16px"
+              fontSize="19px"
               className="hover:text-blue-500"
             />
           </Link>
