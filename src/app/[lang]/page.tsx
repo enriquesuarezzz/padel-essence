@@ -19,7 +19,7 @@ export default async function Home({ params: { lang } }: GeneralProps) {
   const dict = await getDictionary(lang || 'en')
 
   return (
-    <main className="pt-40">
+    <main className="pt-28 md:pt-40">
       <Item dict={dict} />
     </main>
   )
