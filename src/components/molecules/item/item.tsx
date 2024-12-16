@@ -1,12 +1,6 @@
-'use client'
 import { OnestText } from '@/components/atoms/onest_text'
 import { LangProps } from '@/interfaces/lang-props'
 import Image from 'next/image'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
 
 export default function Item({ dict }: LangProps) {
   const items = [
@@ -91,37 +85,6 @@ export default function Item({ dict }: LangProps) {
           </div>
         ))}
       </div>
-      {/* <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
-        navigation
-        pagination={{ clickable: true }}
-      >
-        {items.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className="flex flex-col items-center">
-              <Image
-                src={item.image}
-                alt={item.title}
-                width={400}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-              <OnestText
-                text={item.title}
-                tag="h2"
-                style="bold"
-                fontSize="22px"
-              />
-              <OnestText
-                text={item.description}
-                fontSize="16px"
-                className="text-gray-600"
-              />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper> */}
     </main>
   )
 }
