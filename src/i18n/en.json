@@ -18,5 +18,12 @@
       "title": "title item 2",
       "description": "description item 2"
     }
+  },
+  "footer": {
+    "about": "About",
+    "shipping_and_return_policy": "Shipping and Return Policy",
+    "frequently_asked_questions": "Frequently Asked Questions",
+    "contact": "Contact",
+    "copyright": "Copyright © 2024. All rights reserved - Skymatch"
   }
 }
