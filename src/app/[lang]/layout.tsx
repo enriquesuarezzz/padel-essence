@@ -4,6 +4,7 @@ import '../globals.css'
 
 import { LangOptions, getDictionary } from './dictionaries'
 import Navbar from '@/components/molecules/navbar/navbar'
+import Footer from '@/components/molecules/footer/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +26,7 @@ export default async function RootLayout({ children, params }: Props) {
       <body className={inter.className}>
         {children}
         <Navbar dict={dict} />
+        <Footer dict={dict} />
       </body>
     </html>
   )
