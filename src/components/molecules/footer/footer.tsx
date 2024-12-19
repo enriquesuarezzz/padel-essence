@@ -10,7 +10,7 @@ export default function Footer({ dict }: LangProps) {
     <footer className="bottom-0 flex w-full flex-col items-center justify-items-center bg-[#1e1e1e] py-4 md:mt-24 md:py-10">
       <Image src="/images/logo.avif" alt="logo" width={100} height={100} />
       <div className="flex flex-col items-center gap-8">
-        <div className="flex gap-3 md:gap-6">
+        <div className="flex gap-1 px-3 md:gap-6">
           <Link href={'/servicios'}>
             <OnestText
               text={dict.footer.about}
@@ -60,10 +60,11 @@ export default function Footer({ dict }: LangProps) {
             <Facebook className="size-6 lg:size-8" />
           </Link>
         </div>
+
         <OnestText
           text={dict.footer.copyright}
           fontSize="16px"
-          className="text-gray-600"
+          className="text-center text-gray-600"
         />
       </div>
     </footer>
