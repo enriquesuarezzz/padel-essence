@@ -55,14 +55,13 @@ export default function Navbar({ dict }: LangProps) {
 
   return (
     <nav className="fixed top-0 flex w-full items-center bg-transparent px-6 py-5 text-white">
-      {/* Mobile: Burger Menu, Logo (centered), and Cart */}
       <div className="relative flex w-full items-center justify-between md:hidden">
         {/* Burger Menu */}
         <button className="z-10" onClick={toggleMenu} aria-label="Toggle Menu">
           {isMenuOpen ? <span>✕</span> : <span>☰</span>}
         </button>
 
-        {/* Logo (centered) */}
+        {/* Logo*/}
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
           <Image
             src="/images/logo.avif"
@@ -79,7 +78,18 @@ export default function Navbar({ dict }: LangProps) {
         </button>
       </div>
 
-      {/* Desktop: Navigation Links */}
+      {/* Logo */}
+      <div className="hidden flex-shrink-0 md:block">
+        <Image
+          src="/images/logo.avif"
+          width={120}
+          height={60}
+          alt="Logo"
+          className="mx-1 lg:mx-10"
+        />
+      </div>
+
+      {/* Links */}
       <div className="hidden items-center gap-6 md:flex md:flex-1">
         {data.map((item) => (
           <Link href={item.href} key={item.title}>
@@ -91,17 +101,6 @@ export default function Navbar({ dict }: LangProps) {
             />
           </Link>
         ))}
-      </div>
-
-      {/* Logo */}
-      <div className="hidden flex-shrink-0 md:block">
-        <Image
-          src="/images/logo.avif"
-          width={120}
-          height={60}
-          alt="Logo"
-          className="mx-auto"
-        />
       </div>
 
       {/* Right Section */}
