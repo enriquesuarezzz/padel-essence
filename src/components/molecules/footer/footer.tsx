@@ -32,7 +32,7 @@ export default function Footer({ dict }: LangProps) {
               className="text-white hover:text-blue-500"
             />
           </Link>
-          <Link href={'/contacto'}>
+          <Link href={'/contact'}>
             <OnestText
               text={dict.footer.contact}
               fontSize="16px"
