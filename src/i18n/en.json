@@ -1,7 +1,13 @@
 {
   "metadata": {
-    "title": "Padel Essence",
-    "description": "The best of padel"
+    "home": {
+      "title": "Padel Essence Home",
+      "description": "The best of padel"
+    },
+    "contact": {
+      "title": "Padel Essence Contact",
+      "description": "The best of padel"
+    }
   },
   "navbar": {
     "rackets": "Rackets",
@@ -24,6 +30,19 @@
     "shipping_and_return_policy": "Shipping and Returns",
     "frequently_asked_questions": "Frequently Asked Questions",
     "contact": "Contact",
-    "copyright": "Copyright © 2024. All rights reserved - Skymatch"
+    "copyright": "Copyright © 2024. All rights reserved - Padel Essence"
+  },
+  "contact": {
+    "tittle": "Contact",
+    "subtittle": "Do you have any questions? Get in touch with us",
+    "form": {
+      "name": "Name",
+      "surname": "Surname",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "checkbox": "I agree to the processing of my personal data in accordance with our <a href='/privacy-policy' class='underline hover:text-blue-600'> Privacy Policy </a>",
+      "send": "Send"
+    }
   }
 }
