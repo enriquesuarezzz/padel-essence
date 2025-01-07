@@ -7,6 +7,10 @@
     "contact": {
       "title": "Padel Essence Contact",
       "description": "The best of padel"
+    },
+    "about": {
+      "title": "Padel Essence about us",
+      "description": "The best of padel"
     }
   },
   "navbar": {
@@ -41,8 +45,12 @@
       "email": "Email",
       "phone": "Phone",
       "message": "Message",
-      "checkbox": "I agree to the processing of my personal data in accordance with our <a href='/privacy-policy' class='underline hover:text-blue-600'> Privacy Policy </a>",
+      "checkbox": "I agree to the processing of my personal data in accordance with our Privacy Policy",
       "send": "Send"
     }
+  },
+  "about": {
+    "title": "Welcome to Padel Essence",
+    "description": "At Padel Essence, we're passionate about padel. Our mission is simple: to provide players of all levels with the best gear, apparel, and accessories to elevate their game. Whether you're just starting out or a seasoned pro, we’ve got everything you need to dominate the court. <br/> <br/> We understand that padel isn’t just a sport—it’s a lifestyle. That’s why we carefully curate our collection to include top brands, innovative products, and the latest trends. From rackets to shoes, and everything in between, we're here to make sure you have the tools to succeed."
   }
 }
