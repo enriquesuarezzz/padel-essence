@@ -20,7 +20,7 @@ export async function generateMetadata(
 export default async function ContactPage({ params: { lang } }: GeneralProps) {
   const dict = await getDictionary(lang)
   return (
-    <main className="flex flex-col pt-40">
+    <main className="flex flex-col pb-10 pt-20 md:pt-40">
       {/* header image */}
       <Image
         src="/images/contact_header.avif"

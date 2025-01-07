@@ -11,7 +11,7 @@ export default function Footer({ dict }: LangProps) {
       <Image src="/images/logo.avif" alt="logo" width={100} height={100} />
       <div className="flex flex-col items-center gap-8">
         <div className="flex gap-1 px-3 md:gap-6">
-          <Link href={'/servicios'}>
+          <Link href={'/about'}>
             <OnestText
               text={dict.footer.about}
               fontSize="16px"

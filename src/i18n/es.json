@@ -2,11 +2,15 @@
   "metadata": {
     "home": {
       "title": "Padel Essence Home",
-      "description": "The best of padel"
+      "description": "Especialistas en pádel"
     },
     "contact": {
       "title": "Padel Essence Contacto",
-      "description": "The best of padel"
+      "description": "Especialistas en pádel"
+    },
+    "about": {
+      "title": "Padel Essence sobre nosotros",
+      "description": "Especialistas en pádel"
     }
   },
   "navbar": {
@@ -41,8 +45,12 @@
       "email": "Email",
       "phone": "Teléfono",
       "message": "Mensaje",
-      "checkbox": "Acepto el procesamiento de mis datos personales de acuerdo con nuestra <a href='/privacy-policy' class='underline hover:text-blue-600'> Política de Privacidad </a>",
+      "checkbox": "Acepto el procesamiento de mis datos personales de acuerdo con nuestra Política de Privacidad",
       "send": "Enviar"
     }
+  },
+  "about": {
+    "title": "Bienvenido a Padel Essence",
+    "description": "En Padel Essence, vivimos y respiramos pádel. Nuestra misión es sencilla: ofrecer a jugadores de todos los niveles el mejor equipamiento, ropa y accesorios para llevar su juego al siguiente nivel. Ya sea que estés comenzando o seas un profesional experimentado, tenemos todo lo que necesitas para dominar la pista. <br/> <br/> Sabemos que el pádel no es solo un deporte, es un estilo de vida. Por eso, seleccionamos cuidadosamente nuestra colección para incluir las mejores marcas, productos innovadores y las últimas tendencias. Desde palas hasta zapatillas, y todo lo demás, estamos aquí para asegurarnos de que tengas las herramientas para triunfar."
   }
 }

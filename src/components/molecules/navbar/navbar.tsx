@@ -61,33 +61,36 @@ export default function Navbar({ dict }: LangProps) {
           {isMenuOpen ? <span>✕</span> : <span>☰</span>}
         </button>
 
-        {/* Logo*/}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
-          <Image
-            src="/images/logo.avif"
-            width={80}
-            height={40}
-            alt="Logo"
-            className="flex-shrink-0"
-          />
-        </div>
+        {/* Mobile Logo */}
+        <Link href="/">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
+            <Image
+              src="/images/logo.avif"
+              width={80}
+              height={40}
+              alt="Logo"
+              className="flex-shrink-0"
+            />
+          </div>
+        </Link>
 
         {/* Cart */}
         <button className="z-10 rounded-md border border-gray-600 p-2">
           <Cart />
         </button>
       </div>
-
-      {/* Logo */}
-      <div className="hidden flex-shrink-0 md:block">
-        <Image
-          src="/images/logo.avif"
-          width={120}
-          height={60}
-          alt="Logo"
-          className="mx-1 lg:mx-10"
-        />
-      </div>
+      <Link href="/">
+        {/* Logo */}
+        <div className="hidden flex-shrink-0 md:block">
+          <Image
+            src="/images/logo.avif"
+            width={120}
+            height={60}
+            alt="Logo"
+            className="mx-1 lg:mx-10"
+          />
+        </div>
+      </Link>
 
       {/* Links */}
       <div className="hidden items-center gap-6 md:flex md:flex-1">
