@@ -19,22 +19,50 @@ export async function generateMetadata(
 export default async function ContactPage({ params: { lang } }: GeneralProps) {
   const dict = await getDictionary(lang)
   return (
-    <main className="mx-10 flex flex-col pb-10 pt-20 text-white md:pt-40">
-      <div>
-        <OnestText
-          text={dict.about.title}
-          fontSize="22px"
-          style="bold"
-          className="text-bold pt-6 md:pt-0"
-        />
-      </div>
-      <div>
-        <OnestText
-          text={dict.about.description}
-          fontSize="19px"
-          className="text-bold pb-6 pt-2 text-center md:pb-10 md:pt-6"
-        />
-      </div>
+    <main className="flex flex-col items-center justify-center px-10 pb-10 pt-20 text-white md:pt-40">
+      <section className="max-w-[800px]">
+        <div className="flex justify-center pb-6 pt-6">
+          <OnestText
+            text={dict.about.title}
+            fontSize="22px"
+            style="bold"
+            className="text-bold"
+          />
+        </div>
+        <div className="flex justify-center pt-6">
+          <OnestText
+            text={dict.about.description}
+            fontSize="19px"
+            className="text-bold"
+          />
+        </div>
+        <div className="flex flex-col justify-center pt-6">
+          <OnestText
+            text={dict.about.description_2}
+            fontSize="19px"
+            className="text-bold"
+          />
+        </div>
+        <div className="flex flex-col justify-center pt-6">
+          <OnestText
+            text={dict.about.why_us}
+            fontSize="19px"
+            className="text-bold"
+          />
+          <ul className="md:text[16px] flex flex-col gap-2 pt-4 text-[14px] lg:text-[19px]">
+            <li className="text-bold"> {dict.about.list_1}</li>
+            <li className="text-bold"> {dict.about.list_2}</li>
+            <li className="text-bold"> {dict.about.list_3}</li>
+          </ul>
+        </div>
+        <div className="flex flex-col justify-center pt-6">
+          <OnestText
+            text={dict.about.ending}
+            fontSize="19px"
+            className="text-bold"
+          />
+        </div>
+      </section>
     </main>
   )
 }
