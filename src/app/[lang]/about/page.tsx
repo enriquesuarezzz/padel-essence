@@ -1,7 +1,6 @@
 import { GeneralProps } from '@/interfaces/lang-props'
 import { ResolvingMetadata, Metadata } from 'next'
 import { getDictionary } from '../dictionaries'
-import Image from 'next/image'
 import { OnestText } from '@/components/atoms/onest_text'
 
 export async function generateMetadata(
@@ -32,24 +31,24 @@ export default async function ContactPage({ params: { lang } }: GeneralProps) {
         <div className="flex justify-center pt-6">
           <OnestText
             text={dict.about.description}
-            fontSize="19px"
+            fontSize="16px"
             className="text-bold"
           />
         </div>
         <div className="flex flex-col justify-center pt-6">
           <OnestText
             text={dict.about.description_2}
-            fontSize="19px"
+            fontSize="16px"
             className="text-bold"
           />
         </div>
         <div className="flex flex-col justify-center pt-6">
           <OnestText
             text={dict.about.why_us}
-            fontSize="19px"
+            fontSize="16px"
             className="text-bold"
           />
-          <ul className="md:text[16px] flex flex-col gap-2 pt-4 text-[14px] lg:text-[19px]">
+          <ul className="flex flex-col gap-2 pt-4 text-[14px] md:text-[16px]">
             <li className="text-bold"> {dict.about.list_1}</li>
             <li className="text-bold"> {dict.about.list_2}</li>
             <li className="text-bold"> {dict.about.list_3}</li>
@@ -58,7 +57,7 @@ export default async function ContactPage({ params: { lang } }: GeneralProps) {
         <div className="flex flex-col justify-center pt-6">
           <OnestText
             text={dict.about.ending}
-            fontSize="19px"
+            fontSize="16px"
             className="text-bold"
           />
         </div>
