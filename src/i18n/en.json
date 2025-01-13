@@ -11,6 +11,10 @@
     "about": {
       "title": "Padel Essence about us",
       "description": "The best of padel"
+    },
+    "shipping_return_policy": {
+      "title": "Padel Essence shipping and return policy",
+      "description": "The best of padel"
     }
   },
   "navbar": {
@@ -58,5 +62,35 @@
     "list_2": "Expert Guidance: Not sure what you need? Our team of padel enthusiasts is here to help.",
     "list_3": "Fast & Reliable Service: From easy online shopping to quick delivery, we make it simple to gear up.",
     "ending": "Join our growing community of padel players who share the same passion for the game. At Padel Essence, we’re more than a store—we’re your partner on and off the court."
+  },
+  "shipping_return_policy": {
+    "title": "Shipping and Return Policy",
+    "shipping_title": "Shipping Policy",
+    "shipping_list": {
+      "list_1": "We offer fast and reliable shipping across worldwide.",
+      "list_2": "Orders are processed within 1-3 business days and shipped via DHL, UPS.",
+      "list_3": "Shipping costs are calculated at checkout based on your location and order weight.",
+      "list_4": "Free shipping is available for orders over 200€."
+    },
+    "delivery_title": "Estimated Delivery Times:",
+    "delivery_list": {
+      "list_1": "Europe: 2-5 business days",
+      "list_2": "USA: 5-10 business days",
+      "list_3": "International: 10-15 business days"
+    },
+    "delivery_description": "Once your order is shipped, you will receive a confirmation email with tracking information.",
+    "return_title": "Return Policy",
+    "return_list": {
+      "list_1": "We accept returns within 30 days of delivery.",
+      "list_2": "Items must be unused, in their original condition, and in the original packaging.",
+      "list_3": "To initiate a return, contact us at padelessence@gmail.com with your order number and reason for the return.",
+      "list_4": "Customers are responsible for return shipping costs unless the item is defective or incorrect."
+    },
+    "refunds_title": "Refunds",
+    "refund_list": {
+      "list_1": "Refunds will be processed within 5-7 business days after we receive and inspect the returned item.",
+      "list_2": "Refunds will be issued to the original payment method."
+    },
+    "refund_description": "If you have any questions about our shipping or return policies, feel free to contact us at padelessence@gmail.com."
   }
 }

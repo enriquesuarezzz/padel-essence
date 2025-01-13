@@ -11,6 +11,10 @@
     "about": {
       "title": "Padel Essence sobre nosotros",
       "description": "Especialistas en pádel"
+    },
+    "shipping_return_policy": {
+      "title": "Padel Essence Política de Envíos y Devoluciones",
+      "description": "Especialistas en pádel"
     }
   },
   "navbar": {
@@ -58,5 +62,35 @@
     "list_2": "Asesoramiento experto: ¿No sabes qué necesitas? Nuestro equipo de apasionados del pádel está aquí para ayudarte.",
     "list_3": "Servicio rápido y confiable: Desde una compra online fácil hasta entregas rápidas, hacemos que equiparte sea sencillo.",
     "ending": "Únete a nuestra creciente comunidad de jugadores de pádel que comparten la misma pasión por este deporte. En Padel Essence, somos más que una tienda, somos tu compañero dentro y fuera de la pista."
+  },
+  "shipping_return_policy": {
+    "title": "Política de Envíos y Devoluciones",
+    "shipping_title": "Política de Envíos",
+    "shipping_list": {
+      "list_1": "Ofrecemos envíos rápidos y confiables a nivel mundial.",
+      "list_2": "Los pedidos se procesan en un plazo de 1-3 días hábiles y se envían a través de DHL, UPS.",
+      "list_3": "Los costos de envío se calculan al finalizar la compra según tu ubicación y el peso del pedido.",
+      "list_4": "Envío gratuito disponible para pedidos superiores a 200€."
+    },
+    "delivery_title": "Tiempos Estimados de Entrega:",
+    "delivery_list": {
+      "list_1": "Europa: 2-5 días hábiles",
+      "list_2": "Estados Unidos: 5-10  días hábiles",
+      "list_3": "Internacional: 10-15  días hábiles"
+    },
+    "delivery_description": "Una vez enviado tu pedido, recibirás un correo de confirmación con la información de seguimiento.",
+    "return_title": "Política de Devoluciones",
+    "return_list": {
+      "list_1": "Aceptamos devoluciones dentro de los 30 días posteriores a la entrega.",
+      "list_2": "Los artículos deben estar sin usar, en su estado original y en el empaque original.",
+      "list_3": "Para iniciar una devolución, contáctanos en padelessence@gmail.com con tu número de pedido y el motivo de la devolución.",
+      "list_4": "Los costos de envío para devoluciones son responsabilidad del cliente, a menos que el artículo esté defectuoso o sea incorrecto."
+    },
+    "refunds_title": "Reembolsos",
+    "refund_list": {
+      "list_1": "Los reembolsos se procesarán dentro de 5-7 días hábiles después de recibir e inspeccionar el artículo devuelto.",
+      "list_2": "Los reembolsos se emitirán al método de pago original."
+    },
+    "refund_description": "Si tienes preguntas sobre nuestras políticas de envío o devoluciones, no dudes en contactarnos en padelessence@gmail.com"
   }
 }
