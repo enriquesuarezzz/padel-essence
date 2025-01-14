@@ -23,7 +23,7 @@ export default async function ContactPage({ params: { lang } }: GeneralProps) {
         <div className="flex justify-center pb-6 pt-6">
           <OnestText
             text={dict.about.title}
-            fontSize="22px"
+            fontSize="32px"
             style="bold"
             className="text-bold"
           />

@@ -15,6 +15,10 @@
     "shipping_return_policy": {
       "title": "Padel Essence Política de Envíos y Devoluciones",
       "description": "Especialistas en pádel"
+    },
+    "frequently_asked_questions": {
+      "title": "Padel Essence preguntas frecuentes",
+      "description": "Especialistas en pádel"
     }
   },
   "navbar": {

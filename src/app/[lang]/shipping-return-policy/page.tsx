@@ -24,111 +24,76 @@ export default async function ContactPage({ params: { lang } }: GeneralProps) {
           {/* title */}
           <OnestText
             text={dict.shipping_return_policy.title}
-            fontSize="22px"
+            fontSize="32px"
             style="bold"
-            className="text-bold"
+            className="text-white"
           />
         </div>
         {/* shipping policy */}
         <div className="flex flex-col justify-center pt-6">
           <OnestText
             text={dict.shipping_return_policy.shipping_title}
-            fontSize="16px"
-            className="text-bold"
+            fontSize="22px"
+            style="bold"
+            className="text-white"
           />
           <ul className="flex flex-col gap-2 pt-4 text-[14px] md:text-[16px]">
-            <li className="text-bold">
-              {' '}
-              {dict.shipping_return_policy.shipping_list.list_1}
-            </li>
-            <li className="text-bold">
-              {' '}
-              {dict.shipping_return_policy.shipping_list.list_2}
-            </li>
-            <li className="text-bold">
-              {' '}
-              {dict.shipping_return_policy.shipping_list.list_3}
-            </li>
-            <li className="text-bold">
-              {' '}
-              {dict.shipping_return_policy.shipping_list.list_4}
-            </li>
+            <li> {dict.shipping_return_policy.shipping_list.list_1}</li>
+            <li> {dict.shipping_return_policy.shipping_list.list_2}</li>
+            <li> {dict.shipping_return_policy.shipping_list.list_3}</li>
+            <li> {dict.shipping_return_policy.shipping_list.list_4}</li>
           </ul>
         </div>
         {/* delivery policy */}
         <div className="flex flex-col justify-center pt-6">
           <OnestText
             text={dict.shipping_return_policy.delivery_title}
-            fontSize="16px"
-            className="text-bold"
+            fontSize="22px"
+            style="bold"
+            className="text-white"
           />
           <ul className="flex flex-col gap-2 pt-4 text-[14px] md:text-[16px]">
-            <li className="text-bold">
-              {' '}
-              {dict.shipping_return_policy.delivery_list.list_1}
-            </li>
-            <li className="text-bold">
-              {' '}
-              {dict.shipping_return_policy.delivery_list.list_2}
-            </li>
-            <li className="text-bold">
-              {' '}
-              {dict.shipping_return_policy.delivery_list.list_3}
-            </li>
+            <li> {dict.shipping_return_policy.delivery_list.list_1}</li>
+            <li> {dict.shipping_return_policy.delivery_list.list_2}</li>
+            <li> {dict.shipping_return_policy.delivery_list.list_3}</li>
           </ul>
           <OnestText
             text={dict.shipping_return_policy.refund_description}
             fontSize="16px"
-            className="text-bold pt-6"
+            className="pt-6"
           />
         </div>
         {/* return policy */}
         <div className="flex flex-col justify-center pt-6">
           <OnestText
             text={dict.shipping_return_policy.return_title}
-            fontSize="16px"
-            className="text-bold"
+            fontSize="22px"
+            style="bold"
+            className="text-white"
           />
           <ul className="flex flex-col gap-2 pt-4 text-[14px] md:text-[16px]">
-            <li className="text-bold">
-              {' '}
-              {dict.shipping_return_policy.return_list.list_1}
-            </li>
-            <li className="text-bold">
-              {' '}
-              {dict.shipping_return_policy.return_list.list_2}
-            </li>
-            <li className="text-bold">
-              {' '}
-              {dict.shipping_return_policy.return_list.list_3}
-            </li>
-            <li className="text-bold">
-              {' '}
-              {dict.shipping_return_policy.return_list.list_4}
-            </li>
+            <li> {dict.shipping_return_policy.return_list.list_1}</li>
+            <li> {dict.shipping_return_policy.return_list.list_2}</li>
+            <li> {dict.shipping_return_policy.return_list.list_3}</li>
+            <li> {dict.shipping_return_policy.return_list.list_4}</li>
           </ul>
         </div>
         {/* refunds policy */}
         <div className="flex flex-col justify-center pt-6">
           <OnestText
             text={dict.shipping_return_policy.refunds_title}
-            fontSize="16px"
-            className="text-bold"
+            fontSize="22px"
+            style="bold"
+            className="text-white"
           />
           <ul className="flex flex-col gap-2 pt-4 text-[14px] md:text-[16px]">
-            <li className="text-bold">
-              {' '}
-              {dict.shipping_return_policy.refund_list.list_1}
-            </li>
-            <li className="text-bold">
-              {' '}
-              {dict.shipping_return_policy.refund_list.list_2}
-            </li>
+            <li> {dict.shipping_return_policy.refund_list.list_1}</li>
+            <li> {dict.shipping_return_policy.refund_list.list_2}</li>
           </ul>
           <OnestText
             text={dict.shipping_return_policy.refund_description}
             fontSize="16px"
-            className="text-bold pt-6"
+            className="pt-6"
           />
         </div>
       </section>
