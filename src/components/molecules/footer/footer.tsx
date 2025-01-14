@@ -18,14 +18,14 @@ export default function Footer({ dict }: LangProps) {
               className="text-white hover:text-blue-500"
             />
           </Link>
-          <Link href={'/reservar'}>
+          <Link href={'/shipping-return-policy'}>
             <OnestText
               text={dict.footer.shipping_and_return_policy}
               fontSize="16px"
               className="text-white hover:text-blue-500"
             />
           </Link>
-          <Link href={'/reservar'}>
+          <Link href={'/frequently-asked-questions'}>
             <OnestText
               text={dict.footer.frequently_asked_questions}
               fontSize="16px"
