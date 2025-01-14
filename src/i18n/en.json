@@ -15,6 +15,10 @@
     "shipping_return_policy": {
       "title": "Padel Essence shipping and return policy",
       "description": "The best of padel"
+    },
+    "frequently_asked_questions": {
+      "title": "Padel Essence frequently asked questions",
+      "description": "The best of padel"
     }
   },
   "navbar": {
