@@ -96,5 +96,31 @@
       "list_2": "Refunds will be issued to the original payment method."
     },
     "refund_description": "If you have any questions about our shipping or return policies, feel free to contact us at padelessence@gmail.com."
+  },
+  "frequently_asked_questions": {
+    "question_1": {
+      "question": "How can I track my order?",
+      "answer": "Once your order is shipped, you will receive a confirmation email with a tracking number and a link to track your package."
+    },
+    "question_2": {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept major credit/debit cards, PayPal, and other secure payment methods."
+    },
+    "question_3": {
+      "question": "Can I change or cancel my order?",
+      "answer": "If your order has not yet been shipped, you can contact us at padelessence@gmail.com to request changes or cancellations."
+    },
+    "question_4": {
+      "question": "What is your return policy?",
+      "answer": "We accept returns within 30 days of delivery. Items must be unused and in their original packaging. Please contact us at padelessence@gmail.com to initiate a return."
+    },
+    "question_5": {
+      "question": "Do you offer free shipping?",
+      "answer": "Yes, free shipping is available for orders over 200€."
+    },
+    "question_6": {
+      "question": "Are the products authentic?",
+      "answer": "Yes, we only sell 100% authentic products from trusted brands."
+    }
   }
 }
