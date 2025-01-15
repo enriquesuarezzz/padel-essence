@@ -96,5 +96,31 @@
       "list_2": "Los reembolsos se emitirán al método de pago original."
     },
     "refund_description": "Si tienes preguntas sobre nuestras políticas de envío o devoluciones, no dudes en contactarnos en padelessence@gmail.com"
+  },
+  "frequently_asked_questions": {
+    "question_1": {
+      "question": "¿Cómo puedo rastrear mi pedido?",
+      "answer": "Una vez enviado tu pedido, recibirás un correo de confirmación con un número de seguimiento y un enlace para rastrear tu paquete."
+    },
+    "question_2": {
+      "question": "¿Qué métodos de pago aceptan?",
+      "answer": "Aceptamos tarjetas de crédito/débito principales, PayPal y otros métodos de pago seguros."
+    },
+    "question_3": {
+      "question": "¿Puedo cambiar o cancelar mi pedido?",
+      "answer": "Si tu pedido aún no ha sido enviado, puedes contactarnos en padelessence@gmail.com para solicitar cambios o cancelaciones."
+    },
+    "question_4": {
+      "question": "¿Cuál es su política de devoluciones?",
+      "answer": "Aceptamos devoluciones dentro de los 30 días posteriores a la entrega. Los artículos deben estar sin usar y en su empaque original. Por favor, contáctanos en padelessence@gmail.com para iniciar una devolución."
+    },
+    "question_5": {
+      "question": "¿Ofrecen envío gratuito?",
+      "answer": "Sí, el envío gratuito está disponible para pedidos superiores a 200€."
+    },
+    "question_6": {
+      "question": "¿Los productos son auténticos?",
+      "answer": "Sí, solo vendemos productos 100% auténticos de marcas confiables."
+    }
   }
 }
