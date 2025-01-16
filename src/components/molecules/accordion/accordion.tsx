@@ -16,11 +16,11 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const toggleItem = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index)
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index))
   }
 
   return (
-    <div className="mx-auto w-full max-w-md space-y-4">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       {items.map((item, index) => (
         <div
           key={index}
