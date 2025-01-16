@@ -98,6 +98,7 @@
     "refund_description": "Si tienes preguntas sobre nuestras políticas de envío o devoluciones, no dudes en contactarnos en padelessence@gmail.com"
   },
   "frequently_asked_questions": {
+    "title": "Preguntas Frecuentes",
     "question_1": {
       "question": "¿Cómo puedo rastrear mi pedido?",
       "answer": "Una vez enviado tu pedido, recibirás un correo de confirmación con un número de seguimiento y un enlace para rastrear tu paquete."
@@ -121,6 +122,18 @@
     "question_6": {
       "question": "¿Los productos son auténticos?",
       "answer": "Sí, solo vendemos productos 100% auténticos de marcas confiables."
+    },
+    "question_7": {
+      "question": "¿Realizan envíos internacionales?",
+      "answer": "Sí, realizamos envíos a muchos países en todo el mundo. Los costos y tiempos de envío se calcularán al finalizar la compra."
+    },
+    "question_8": {
+      "question": "¿Qué hago si recibo un artículo dañado o incorrecto?",
+      "answer": "Por favor, contáctanos de inmediato en [correo electrónico] con fotos del artículo, y resolveremos el problema rápidamente."
+    },
+    "question_9": {
+      "question": "¿Cómo puedo contactar al servicio al cliente?",
+      "answer": "Puedes escribirnos a [correo electrónico] o utilizar nuestro formulario de contacto en el sitio web."
     }
   }
 }
