@@ -98,6 +98,7 @@
     "refund_description": "If you have any questions about our shipping or return policies, feel free to contact us at padelessence@gmail.com."
   },
   "frequently_asked_questions": {
+    "title": "Frequently Asked Questions",
     "question_1": {
       "question": "How can I track my order?",
       "answer": "Once your order is shipped, you will receive a confirmation email with a tracking number and a link to track your package."
@@ -121,6 +122,18 @@
     "question_6": {
       "question": "Are the products authentic?",
       "answer": "Yes, we only sell 100% authentic products from trusted brands."
+    },
+    "question_7": {
+      "question": "Do you ship internationally?",
+      "answer": "Yes, we ship to many countries worldwide. Shipping costs and delivery times will be calculated at checkout."
+    },
+    "question_8": {
+      "question": "What should I do if I receive a damaged or incorrect item?",
+      "answer": "Please contact us immediately at [email address] with photos of the item, and we will resolve the issue promptly."
+    },
+    "question_9": {
+      "question": "How do I contact customer support?",
+      "answer": "You can reach us at [email address] or through our contact form on the website."
     }
   }
 }
