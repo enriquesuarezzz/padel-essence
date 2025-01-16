@@ -43,9 +43,27 @@ export default async function ContactPage({ params: { lang } }: GeneralProps) {
       title: dict.frequently_asked_questions.question_6.question,
       content: dict.frequently_asked_questions.question_6.answer,
     },
+    {
+      title: dict.frequently_asked_questions.question_7.question,
+      content: dict.frequently_asked_questions.question_7.answer,
+    },
+    {
+      title: dict.frequently_asked_questions.question_8.question,
+      content: dict.frequently_asked_questions.question_8.answer,
+    },
+    {
+      title: dict.frequently_asked_questions.question_9.question,
+      content: dict.frequently_asked_questions.question_9.answer,
+    },
   ]
   return (
     <main className="pt-20 md:pt-40">
+      <OnestText
+        text={dict.frequently_asked_questions.title}
+        fontSize="32px"
+        style="bold"
+        className="pb-6 text-center text-white"
+      />
       <div className="p-6">
         <Accordion items={data} />
       </div>
