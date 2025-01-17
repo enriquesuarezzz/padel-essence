@@ -45,19 +45,19 @@ export default function Footer({ dict }: LangProps) {
             href={'https://x.com/'}
             className="transition-transform hover:scale-110"
           >
-            <X className="size-6 lg:size-8" />
+            <X className="size-4 lg:size-6" />
           </Link>
           <Link
             href={'https://www.instagram.com/'}
             className="transition-transform hover:scale-110"
           >
-            <Instagram className="size-6 lg:size-8" />
+            <Instagram className="size-4 lg:size-6" />
           </Link>
           <Link
             href={'https://www.facebook.com'}
             className="transition-transform hover:scale-110"
           >
-            <Facebook className="size-6 lg:size-8" />
+            <Facebook className="size-4 lg:size-6" />
           </Link>
         </div>
 
