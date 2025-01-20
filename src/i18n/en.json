@@ -19,6 +19,10 @@
     "frequently_asked_questions": {
       "title": "Padel Essence frequently asked questions",
       "description": "The best of padel"
+    },
+    "product": {
+      "not_found_title": "Product Not Found",
+      "not_found_description": "The product you're looking for doesn't exist."
     }
   },
   "navbar": {
@@ -135,5 +139,25 @@
       "question": "How do I contact customer support?",
       "answer": "You can reach us at [email address] or through our contact form on the website."
     }
+  },
+  "products": {
+    "padel-racket-pro": {
+      "name": "Padel Racket Pro",
+      "description": "A professional padel racket for advanced players.",
+      "price": 99.99
+    },
+    "padel-ball-set": {
+      "name": "Padel Ball Set",
+      "description": "A set of durable padel balls.",
+      "price": 19.99
+    }
+  },
+  "product": {
+    "price_label": "Price",
+    "not_found": "Product not found."
+  },
+
+  "errors": {
+    "product_not_found": "Sorry, we couldn't find the product you're looking for."
   }
 }

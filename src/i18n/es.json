@@ -19,6 +19,10 @@
     "frequently_asked_questions": {
       "title": "Padel Essence preguntas frecuentes",
       "description": "Especialistas en pádel"
+    },
+    "product": {
+      "not_found_title": "Producto No Encontrado",
+      "not_found_description": "El producto que buscas no existe."
     }
   },
   "navbar": {
@@ -135,5 +139,25 @@
       "question": "¿Cómo puedo contactar al servicio al cliente?",
       "answer": "Puedes escribirnos a [correo electrónico] o utilizar nuestro formulario de contacto en el sitio web."
     }
+  },
+  "products": {
+    "padel-racket-pro": {
+      "name": "Raqueta de Pádel Pro",
+      "description": "Una raqueta de pádel profesional para jugadores avanzados.",
+      "price": 99.99
+    },
+    "padel-ball-set": {
+      "name": "Juego de Pelotas de Pádel",
+      "description": "Un juego de pelotas de pádel duraderas.",
+      "price": 19.99
+    }
+  },
+  "product": {
+    "price_label": "Precio",
+    "not_found": "Producto no encontrado."
+  },
+
+  "errors": {
+    "product_not_found": "Lo sentimos, no pudimos encontrar el producto que buscas."
   }
 }
