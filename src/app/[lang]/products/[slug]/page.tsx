@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import { getDictionary } from '../../dictionaries'
 import Image from 'next/image'
 import { OnestText } from '@/components/atoms/onest_text'
+import Plus from '@/components/atoms/svg/plus'
 
 export async function generateMetadata({
   params: { lang, slug },
@@ -50,36 +51,41 @@ export default async function ProductPage({
 
   return (
     <main className="flex flex-col pb-10 pt-20 md:pt-40">
-      {/* Product Image */}
-      <Image
-        src={`/images/products/${slug}.jpg`}
-        alt={product.name}
-        width={800}
-        height={400}
-        className="w-full object-cover"
-        unoptimized
-      />
-      {/* Product Details */}
-      <div className="flex flex-col items-center justify-center text-white">
-        <div className="max-w-8xl mx-auto px-4 xl:px-10">
-          <div className="flex flex-col items-center justify-center pt-2 md:pt-10">
-            <OnestText
-              text={product.name}
-              fontSize="22px"
-              style="bold"
-              className="text-bold text-orange pt-6 md:pt-0"
-            />
-            <OnestText
-              text={product.description}
-              fontSize="19px"
-              className="text-bold pb-6 pt-2 text-center md:pb-10 md:pt-6"
-            />
-            <OnestText
-              text={`${dict.product.price_label}: $${product.price.toFixed(2)}`}
-              fontSize="19px"
-              className="text-bold text-center md:pb-10"
-            />
-          </div>
+      <div className="m-2 flex flex-col items-center justify-center gap-4 bg-black p-4 text-white md:flex-row lg:m-12 lg:gap-20 lg:p-12">
+        {/* Product Image */}
+        <Image
+          src={product.image}
+          alt={product.name}
+          width={400}
+          height={400}
+          className="mr-0 md:mr-36"
+          unoptimized
+        />
+
+        <div className="flex flex-col items-start justify-center">
+          {/* Product Details */}
+          <OnestText
+            text={product.name}
+            fontSize="32px"
+            style="bold"
+            className="text-bold text-orange pt-6 md:pt-0"
+          />
+          <OnestText
+            text={`${dict.product.price_label}: $${product.price.toFixed(2)}`}
+            fontSize="19px"
+            className="text-bold mt-3 rounded-lg bg-blue-600 p-1 text-center"
+          />
+          <OnestText
+            text={product.description}
+            fontSize="19px"
+            className="text-bold pb-6 pt-2 text-center md:pb-10 md:pt-6"
+          />
+
+          {/* Add to Cart Button */}
+          <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-blue-600 p-2 text-white">
+            <Plus />
+            {dict.products.add_to_cart}
+          </button>
         </div>
       </div>
     </main>
