@@ -141,15 +141,18 @@
     }
   },
   "products": {
+    "add_to_cart": "Añadir al carrito",
     "padel-racket-pro": {
       "name": "Raqueta de Pádel Pro",
       "description": "Una raqueta de pádel profesional para jugadores avanzados.",
-      "price": 99.99
+      "price": 99.99,
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRgjQClBMUeImkp6x9HutUCpUBky1J_-SI7Puge4DW5FKP2bFFJeaTvwKhGsbPjEap5xRIZTm-hdStuxPucPpFDrq0ot9uXGz6xRaktsBAwdvJhZvgXgRBj"
     },
     "padel-ball-set": {
       "name": "Juego de Pelotas de Pádel",
       "description": "Un juego de pelotas de pádel duraderas.",
-      "price": 19.99
+      "price": 19.99,
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSPKNACvs2GOQ8y-F3S9kTf2xPqO373QNTchtaAkJNk6Se6LIGcHvSn1cMTnFK6kQusezuijawZ-hzATU_y-TN87Dg23h9DrhnFPykuSPbKNv4AAn45t6vTBg"
     }
   },
   "product": {
