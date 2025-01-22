@@ -38,20 +38,26 @@ export default async function ProductPage({
 
   if (!product) {
     return (
-      <main className="flex flex-col items-center justify-center text-center">
+      <main className="flex flex-col items-center justify-center pb-36 pt-12 text-center md:pb-0 md:pt-28">
         <OnestText
           text={dict.errors.product_not_found}
           fontSize="22px"
           style="bold"
-          className="text-bold text-red-500"
+          className="text-bold pt-20 text-red-500 md:pt-10"
+        />
+        <Image
+          src="/images/not_found.avif"
+          alt="404"
+          width={550}
+          height={550}
         />
       </main>
     )
   }
 
   return (
-    <main className="flex flex-col pb-10 pt-20 md:pt-40">
-      <div className="m-2 flex flex-col items-center justify-center gap-4 bg-black p-4 text-white md:flex-row lg:m-12 lg:gap-20 lg:p-12">
+    <main className="flex flex-col pb-6 pt-20 md:pt-28">
+      <div className="m-2 flex flex-col items-center justify-center gap-4 rounded-lg border border-gray-700 bg-black/70 p-4 text-white md:flex-row lg:mx-32 lg:gap-20 lg:p-44">
         {/* Product Image */}
         <Image
           src={product.image}
@@ -62,7 +68,7 @@ export default async function ProductPage({
           unoptimized
         />
 
-        <div className="flex flex-col items-start justify-center">
+        <div className="flex flex-col items-start justify-center gap-3">
           {/* Product Details */}
           <OnestText
             text={product.name}
@@ -71,18 +77,44 @@ export default async function ProductPage({
             className="text-bold text-orange pt-6 md:pt-0"
           />
           <OnestText
-            text={`${dict.product.price_label}: $${product.price.toFixed(2)}`}
+            text={`${dict.products.price}: ${product.price.toFixed(2) + '€'}`}
             fontSize="19px"
             className="text-bold mt-3 rounded-lg bg-blue-600 p-1 text-center"
           />
           <OnestText
             text={product.description}
             fontSize="19px"
-            className="text-bold pb-6 pt-2 text-center md:pb-10 md:pt-6"
+            className="text-bold pb-2 pt-2 text-center"
           />
 
+          {/* Size Selector */}
+          {product.sizes && (
+            <div className="w-full pb-2">
+              <label
+                htmlFor="size-selector"
+                className="block text-sm font-bold text-gray-300"
+              >
+                <OnestText
+                  text={dict.products.select_size}
+                  fontSize="16px"
+                  className="text-bold"
+                />
+              </label>
+              <select
+                id="size-selector"
+                className="mt-2 w-full rounded-lg border border-gray-300 bg-gray-800 p-2 text-white"
+              >
+                {product.sizes.map((size: string) => (
+                  <option key={size} value={size}>
+                    {size}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
+
           {/* Add to Cart Button */}
-          <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-blue-600 p-2 text-white">
+          <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-blue-600 p-2 text-white hover:bg-blue-700">
             <Plus />
             {dict.products.add_to_cart}
           </button>
