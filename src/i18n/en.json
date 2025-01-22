@@ -142,6 +142,9 @@
   },
   "products": {
     "add_to_cart": "Add to cart",
+    "price": "Price",
+    "select_size": "Select Size",
+    "not_found": "Product not found.",
     "padel-racket-pro": {
       "name": "Padel Racket Pro",
       "description": "A professional padel racket for advanced players.",
@@ -153,13 +156,15 @@
       "description": "A set of durable padel balls.",
       "price": 19.99,
       "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSPKNACvs2GOQ8y-F3S9kTf2xPqO373QNTchtaAkJNk6Se6LIGcHvSn1cMTnFK6kQusezuijawZ-hzATU_y-TN87Dg23h9DrhnFPykuSPbKNv4AAn45t6vTBg"
+    },
+    "tshirt-basic": {
+      "name": "Basic T-Shirt",
+      "description": "A comfortable basic t-shirt.",
+      "price": 19.99,
+      "image": "https://www.wituka.com/cdn/shop/files/Mesadetrabajo5.png?v=1712584998&width=1445",
+      "sizes": ["S", "M", "L", "XL"]
     }
   },
-  "product": {
-    "price_label": "Price",
-    "not_found": "Product not found."
-  },
-
   "errors": {
     "product_not_found": "Sorry, we couldn't find the product you're looking for."
   }

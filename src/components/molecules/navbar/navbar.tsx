@@ -54,7 +54,7 @@ export default function Navbar({ dict }: LangProps) {
   }
 
   return (
-    <nav className="fixed top-0 flex w-full items-center bg-transparent px-6 py-5 text-white">
+    <nav className="fixed top-0 flex w-full items-center bg-transparent px-6 pt-4 text-white md:pt-0">
       <div className="relative flex w-full items-center justify-between md:hidden">
         {/* Burger Menu */}
         <button className="z-10" onClick={toggleMenu} aria-label="Toggle Menu">
