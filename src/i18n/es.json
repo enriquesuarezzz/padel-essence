@@ -142,6 +142,9 @@
   },
   "products": {
     "add_to_cart": "Añadir al carrito",
+    "price": "Precio",
+    "select_size": "Seleccionar talla",
+    "not_found": "Producto no encontrado.",
     "padel-racket-pro": {
       "name": "Raqueta de Pádel Pro",
       "description": "Una raqueta de pádel profesional para jugadores avanzados.",
@@ -153,13 +156,15 @@
       "description": "Un juego de pelotas de pádel duraderas.",
       "price": 19.99,
       "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSPKNACvs2GOQ8y-F3S9kTf2xPqO373QNTchtaAkJNk6Se6LIGcHvSn1cMTnFK6kQusezuijawZ-hzATU_y-TN87Dg23h9DrhnFPykuSPbKNv4AAn45t6vTBg"
+    },
+    "tshirt-basic": {
+      "name": "Camisa basica",
+      "description": "La mejor camisa de padel",
+      "price": 19.99,
+      "image": "https://www.wituka.com/cdn/shop/files/Mesadetrabajo5.png?v=1712584998&width=1445",
+      "sizes": ["S", "M", "L", "XL"]
     }
   },
-  "product": {
-    "price_label": "Precio",
-    "not_found": "Producto no encontrado."
-  },
-
   "errors": {
     "product_not_found": "Lo sentimos, no pudimos encontrar el producto que buscas."
   }
