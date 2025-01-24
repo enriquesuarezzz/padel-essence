@@ -22,8 +22,8 @@ export default function Navbar({ dict }: LangProps) {
       href: '/rackets',
     },
     {
-      title: dict.navbar.shoes,
-      href: '/shoes',
+      title: dict.navbar.clothes,
+      href: '/clothes',
     },
     {
       title: dict.navbar.material_and_accessories,

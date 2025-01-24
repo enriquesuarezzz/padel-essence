@@ -8,6 +8,7 @@ export interface LangProps {
 export interface GeneralProps {
   params: {
     lang: LangOptions
-    slug?: string // Optional if not all routes have a slug
+    slug?: string
+    category?: string
   }
 }

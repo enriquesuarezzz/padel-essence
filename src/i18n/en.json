@@ -27,7 +27,7 @@
   },
   "navbar": {
     "rackets": "Rackets",
-    "shoes": "Shoes",
+    "clothes": "Clothes",
     "material_and_accessories": "Material and Accessories",
     "search_placeholder": "Start your search here..."
   },
@@ -145,24 +145,34 @@
     "price": "Price",
     "select_size": "Select Size",
     "not_found": "Product not found.",
-    "padel-racket-pro": {
-      "name": "Padel Racket Pro",
-      "description": "A professional padel racket for advanced players.",
-      "price": 99.99,
-      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRgjQClBMUeImkp6x9HutUCpUBky1J_-SI7Puge4DW5FKP2bFFJeaTvwKhGsbPjEap5xRIZTm-hdStuxPucPpFDrq0ot9uXGz6xRaktsBAwdvJhZvgXgRBj"
+    "categories": {
+      "rackets": "Rackets",
+      "clothes": "Clothes",
+      "accessories": "Accessories"
     },
-    "padel-ball-set": {
-      "name": "Padel Ball Set",
-      "description": "A set of durable padel balls.",
-      "price": 19.99,
-      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSPKNACvs2GOQ8y-F3S9kTf2xPqO373QNTchtaAkJNk6Se6LIGcHvSn1cMTnFK6kQusezuijawZ-hzATU_y-TN87Dg23h9DrhnFPykuSPbKNv4AAn45t6vTBg"
-    },
-    "tshirt-basic": {
-      "name": "Basic T-Shirt",
-      "description": "A comfortable basic t-shirt.",
-      "price": 19.99,
-      "image": "https://www.wituka.com/cdn/shop/files/Mesadetrabajo5.png?v=1712584998&width=1445",
-      "sizes": ["S", "M", "L", "XL"]
+    "items": {
+      "padel-racket-pro": {
+        "name": "Padel Racket Pro",
+        "description": "A professional padel racket for advanced players.",
+        "price": 99.99,
+        "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRgjQClBMUeImkp6x9HutUCpUBky1J_-SI7Puge4DW5FKP2bFFJeaTvwKhGsbPjEap5xRIZTm-hdStuxPucPpFDrq0ot9uXGz6xRaktsBAwdvJhZvgXgRBj",
+        "category": "rackets"
+      },
+      "padel-ball-set": {
+        "name": "Padel Ball Set",
+        "description": "A set of durable padel balls.",
+        "price": 19.99,
+        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSPKNACvs2GOQ8y-F3S9kTf2xPqO373QNTchtaAkJNk6Se6LIGcHvSn1cMTnFK6kQusezuijawZ-hzATU_y-TN87Dg23h9DrhnFPykuSPbKNv4AAn45t6vTBg",
+        "category": "accessories"
+      },
+      "tshirt-basic": {
+        "name": "Basic T-Shirt",
+        "description": "A comfortable basic t-shirt.",
+        "price": 19.99,
+        "image": "https://www.wituka.com/cdn/shop/files/Mesadetrabajo5.png?v=1712584998&width=1445",
+        "sizes": ["S", "M", "L", "XL"],
+        "category": "clothes"
+      }
     }
   },
   "errors": {
