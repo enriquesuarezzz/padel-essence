@@ -12,7 +12,7 @@ export async function generateMetadata({
   const dict = await getDictionary(lang)
 
   // Get product details from the dictionary
-  const product = dict.products[slug]
+  const product = dict.products.items[slug]
 
   if (!product) {
     return {
@@ -34,7 +34,7 @@ export default async function ProductPage({
   const dict = await getDictionary(lang)
 
   // Get product details from the dictionary
-  const product = dict.products[slug]
+  const product = dict.products.items[slug]
 
   if (!product) {
     return (
