@@ -1,4 +1,4 @@
-# Padel Essence ecommerc
+# Padel Essence ecommerce
 
 Ecommerce page using NextJS, TailwindCSS and Typescript.
 
